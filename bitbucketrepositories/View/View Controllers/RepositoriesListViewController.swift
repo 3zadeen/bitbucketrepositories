@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RepositoriesListViewController: UIViewController {
+class RepositoriesListViewController: BaseViewController<RepositoriesListView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
