@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+extension URL {
+    func valueOf(_ queryParamName: String) -> String? {
+        guard let url = URLComponents(string: self.absoluteString) else { return nil }
+        return url.queryItems?.first(where: { $0.name == queryParamName })?.value
+    }
+}
