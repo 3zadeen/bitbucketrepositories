@@ -25,6 +25,7 @@
 		E88F8DD22663B5180088D9FB /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD12663B5180088D9FB /* URL+Extension.swift */; };
 		E88F8DD62663BE670088D9FB /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */; };
 		E88F8DD92663BFAC0088D9FB /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD82663BFAC0088D9FB /* RepositoryCell.swift */; };
+		E88F8DDB2663C0500088D9FB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DDA2663C0500088D9FB /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E88F8DD12663B5180088D9FB /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		E88F8DD82663BFAC0088D9FB /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		E88F8DDA2663C0500088D9FB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				E88F8DBC2663A63D0088D9FB /* BaseView.swift */,
 				E88F8DBE2663A7AE0088D9FB /* RepositoriesListView.swift */,
+				E88F8DDA2663C0500088D9FB /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				E88F8DA42663A3BC0088D9FB /* RepositoriesListViewController.swift in Sources */,
 				E88F8DD62663BE670088D9FB /* UITableViewCell+Extension.swift in Sources */,
 				E88F8DC52663AF600088D9FB /* RepositoryModel.swift in Sources */,
+				E88F8DDB2663C0500088D9FB /* ImageView.swift in Sources */,
 				E88F8DD02663B4F90088D9FB /* APIRequest.swift in Sources */,
 				E88F8DCA2663B4950088D9FB /* RepositoriesProvider.swift in Sources */,
 				E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */,
