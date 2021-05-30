@@ -16,6 +16,7 @@
 		E88F8DBD2663A63D0088D9FB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DBC2663A63D0088D9FB /* BaseView.swift */; };
 		E88F8DBF2663A7AE0088D9FB /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DBE2663A7AE0088D9FB /* RepositoriesListView.swift */; };
 		E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC12663A8530088D9FB /* UIView+Extension.swift */; };
+		E88F8DC52663AF600088D9FB /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC42663AF600088D9FB /* RepositoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E88F8DBC2663A63D0088D9FB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E88F8DBE2663A7AE0088D9FB /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
 		E88F8DC12663A8530088D9FB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E88F8DC42663AF600088D9FB /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		E88F8DB52663A5910088D9FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E88F8DC42663AF600088D9FB /* RepositoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88F8DA42663A3BC0088D9FB /* RepositoriesListViewController.swift in Sources */,
+				E88F8DC52663AF600088D9FB /* RepositoryModel.swift in Sources */,
 				E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */,
 				E88F8DBA2663A6190088D9FB /* BaseViewController.swift in Sources */,
 				E88F8DBD2663A63D0088D9FB /* BaseView.swift in Sources */,
