@@ -33,6 +33,7 @@ class RepositoriesListView: BaseView {
         super.setViews()
         
         addSubview(tableview)
+        addSubview(toolBar)
 
         tableview.anchor(top: self.safeAreaLayoutGuide.topAnchor,
                          leading: self.safeAreaLayoutGuide.leadingAnchor,
