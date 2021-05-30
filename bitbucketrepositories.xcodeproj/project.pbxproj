@@ -24,6 +24,7 @@
 		E88F8DD02663B4F90088D9FB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DCF2663B4F90088D9FB /* APIRequest.swift */; };
 		E88F8DD22663B5180088D9FB /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD12663B5180088D9FB /* URL+Extension.swift */; };
 		E88F8DD62663BE670088D9FB /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */; };
+		E88F8DD92663BFAC0088D9FB /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD82663BFAC0088D9FB /* RepositoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E88F8DCF2663B4F90088D9FB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		E88F8DD12663B5180088D9FB /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		E88F8DD82663BFAC0088D9FB /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		E88F8DB72663A59D0088D9FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E88F8DD72663BFA20088D9FB /* Cells */,
 				E88F8DBB2663A62A0088D9FB /* Views */,
 				E88F8DB82663A5F70088D9FB /* View Controllers */,
 			);
@@ -170,6 +173,14 @@
 				E88F8DCF2663B4F90088D9FB /* APIRequest.swift */,
 			);
 			path = "Networking Service";
+			sourceTree = "<group>";
+		};
+		E88F8DD72663BFA20088D9FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E88F8DD82663BFAC0088D9FB /* RepositoryCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				E88F8DBF2663A7AE0088D9FB /* RepositoriesListView.swift in Sources */,
 				E88F8DCE2663B4D10088D9FB /* Endpoint.swift in Sources */,
 				E88F8DA22663A3BC0088D9FB /* SceneDelegate.swift in Sources */,
+				E88F8DD92663BFAC0088D9FB /* RepositoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
