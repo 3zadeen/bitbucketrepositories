@@ -34,7 +34,7 @@ class RepositoryCell: UITableViewCell {
     
     let typeLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue", size: 18)
+        label.font = UIFont(name: "HelveticaNeue", size: 16)
         label.textAlignment = .left
         label.textColor = UIColor.black
         return label
@@ -42,7 +42,7 @@ class RepositoryCell: UITableViewCell {
     
     let dateOfCreationLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue", size: 18)
+        label.font = UIFont(name: "HelveticaNeue", size: 16)
         label.textAlignment = .left
         label.textColor = UIColor.black
         return label
@@ -77,7 +77,7 @@ class RepositoryCell: UITableViewCell {
         
         typeLabel.anchor(top: dateOfCreationLabel.topAnchor,
                          leading: dateOfCreationLabel.trailingAnchor,
-                         bottom: bottomAnchor,
+                         bottom: dateOfCreationLabel.bottomAnchor,
                          trailing: trailingAnchor,
                          padding: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 16),
                          size: CGSize(width: 0, height: 0))
@@ -86,10 +86,13 @@ class RepositoryCell: UITableViewCell {
     func setupUI(with repository: Repository) {
         self.avatar.load(from: repository.owner.links.avatar.href, with: .scaleAspectFit)
         self.displayNameLabel.text = repository.owner.displayName
-        self.dateOfCreationLabel.text = repository.createdDate
-        self.typeLabel.text = repository.type
+        
+        if let createdDate = Date.getFormattedDate(from: repository.createdDate, formatter: "yyyy-MM-dd'T'HH:mm:ss.SSSZ") {
+            self.dateOfCreationLabel.text = "Created Date: \(createdDate)"
+        }
+        self.typeLabel.text = "Type: \(repository.type)"
     }
-    
+
     override func layoutSubviews() {
         avatar.layer.cornerRadius = avatar.bounds.width / 2
     }
