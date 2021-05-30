@@ -83,6 +83,13 @@ class RepositoryCell: UITableViewCell {
                          size: CGSize(width: 0, height: 0))
     }
     
+    func setupUI(with repository: Repository) {
+        self.avatar.load(from: repository.owner.links.avatar.href, with: .scaleAspectFit)
+        self.displayNameLabel.text = repository.owner.displayName
+        self.dateOfCreationLabel.text = repository.createdDate
+        self.typeLabel.text = repository.type
+    }
+    
     override func layoutSubviews() {
         avatar.layer.cornerRadius = avatar.bounds.width / 2
     }
