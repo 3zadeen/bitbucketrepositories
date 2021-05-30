@@ -14,6 +14,8 @@
 		E88F8DAC2663A3BF0088D9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88F8DAA2663A3BF0088D9FB /* LaunchScreen.storyboard */; };
 		E88F8DBA2663A6190088D9FB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DB92663A6190088D9FB /* BaseViewController.swift */; };
 		E88F8DBD2663A63D0088D9FB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DBC2663A63D0088D9FB /* BaseView.swift */; };
+		E88F8DBF2663A7AE0088D9FB /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DBE2663A7AE0088D9FB /* RepositoriesListView.swift */; };
+		E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC12663A8530088D9FB /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E88F8DAD2663A3BF0088D9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E88F8DB92663A6190088D9FB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E88F8DBC2663A63D0088D9FB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		E88F8DBE2663A7AE0088D9FB /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
+		E88F8DC12663A8530088D9FB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				E88F8D9E2663A3BC0088D9FB /* bitbucketrepositories */,
+				E88F8DC02663A8330088D9FB /* Extensions */,
 				E88F8D9D2663A3BC0088D9FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +68,6 @@
 				E88F8DB52663A5910088D9FB /* Model */,
 				E88F8DB72663A59D0088D9FB /* View */,
 				E88F8DB62663A5960088D9FB /* ViewModel */,
-				E88F8DA32663A3BC0088D9FB /* RepositoriesListViewController.swift */,
 			);
 			path = bitbucketrepositories;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E88F8DB92663A6190088D9FB /* BaseViewController.swift */,
+				E88F8DA32663A3BC0088D9FB /* RepositoriesListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -122,8 +127,17 @@
 			isa = PBXGroup;
 			children = (
 				E88F8DBC2663A63D0088D9FB /* BaseView.swift */,
+				E88F8DBE2663A7AE0088D9FB /* RepositoriesListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E88F8DC02663A8330088D9FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E88F8DC12663A8530088D9FB /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,9 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88F8DA42663A3BC0088D9FB /* RepositoriesListViewController.swift in Sources */,
+				E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */,
 				E88F8DBA2663A6190088D9FB /* BaseViewController.swift in Sources */,
 				E88F8DBD2663A63D0088D9FB /* BaseView.swift in Sources */,
 				E88F8DA02663A3BC0088D9FB /* AppDelegate.swift in Sources */,
+				E88F8DBF2663A7AE0088D9FB /* RepositoriesListView.swift in Sources */,
 				E88F8DA22663A3BC0088D9FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
