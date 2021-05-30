@@ -39,6 +39,7 @@ class RepositoriesListViewController: BaseViewController<RepositoriesListView> {
     private func configureDatasource() {
         datasource = RepositoriesDatasource(tableView: self.customView.tableview) { tableview, indexPath, repo -> RepositoryCell? in
             let cell = tableview.dequeueReusableCell(withIdentifier: RepositoryCell.identifier, for: indexPath) as! RepositoryCell
+            cell.setupUI(with: repo)
             return cell
         }
     }
