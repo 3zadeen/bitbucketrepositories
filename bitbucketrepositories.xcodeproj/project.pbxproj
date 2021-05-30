@@ -56,6 +56,9 @@
 			children = (
 				E88F8DB32663A4310088D9FB /* Resources */,
 				E88F8DB42663A49E0088D9FB /* App Delegate */,
+				E88F8DB52663A5910088D9FB /* Model */,
+				E88F8DB72663A59D0088D9FB /* View */,
+				E88F8DB62663A5960088D9FB /* ViewModel */,
 				E88F8DA32663A3BC0088D9FB /* RepositoriesListViewController.swift */,
 			);
 			path = bitbucketrepositories;
@@ -78,6 +81,27 @@
 				E88F8DA12663A3BC0088D9FB /* SceneDelegate.swift */,
 			);
 			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		E88F8DB52663A5910088D9FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E88F8DB62663A5960088D9FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E88F8DB72663A59D0088D9FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
