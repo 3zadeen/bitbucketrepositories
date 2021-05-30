@@ -24,4 +24,8 @@ class RepositoriesProvider {
     func getRepositories(completion: @escaping Completion<Repositories>) {
         service.fetchData(.repositories, completion: completion)
     }
+    
+    func getNexPage(from urlString: String, completion: @escaping Completion<Repositories>) {
+        service.fetchData(.nextPage(urlString: urlString), completion: completion)
+    }
 }
