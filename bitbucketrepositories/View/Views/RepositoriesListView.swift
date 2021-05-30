@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol NextPage: AnyObject {
+    func nextPageButtonDidTap()
+}
+
 class RepositoriesListView: BaseView {
+
+    weak var delegate: NextPage?
     
     let tableview: UITableView = {
         let tableView = UITableView()
@@ -42,6 +48,6 @@ class RepositoriesListView: BaseView {
     }
     
     @objc func loadNextPage() {
-        print("next page")
+        delegate?.nextPageButtonDidTap()
     }
 }
