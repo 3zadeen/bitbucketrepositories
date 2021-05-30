@@ -18,6 +18,11 @@
 		E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC12663A8530088D9FB /* UIView+Extension.swift */; };
 		E88F8DC52663AF600088D9FB /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC42663AF600088D9FB /* RepositoryModel.swift */; };
 		E88F8DC72663B0550088D9FB /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC62663B0550088D9FB /* RepositoriesViewModel.swift */; };
+		E88F8DCA2663B4950088D9FB /* RepositoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DC92663B4950088D9FB /* RepositoriesProvider.swift */; };
+		E88F8DCC2663B4AB0088D9FB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DCB2663B4AB0088D9FB /* APIService.swift */; };
+		E88F8DCE2663B4D10088D9FB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DCD2663B4D10088D9FB /* Endpoint.swift */; };
+		E88F8DD02663B4F90088D9FB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DCF2663B4F90088D9FB /* APIRequest.swift */; };
+		E88F8DD22663B5180088D9FB /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD12663B5180088D9FB /* URL+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		E88F8DC12663A8530088D9FB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E88F8DC42663AF600088D9FB /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
 		E88F8DC62663B0550088D9FB /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		E88F8DC92663B4950088D9FB /* RepositoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesProvider.swift; sourceTree = "<group>"; };
+		E88F8DCB2663B4AB0088D9FB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E88F8DCD2663B4D10088D9FB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E88F8DCF2663B4F90088D9FB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		E88F8DD12663B5180088D9FB /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 		E88F8D9E2663A3BC0088D9FB /* bitbucketrepositories */ = {
 			isa = PBXGroup;
 			children = (
+				E88F8DC82663B4860088D9FB /* Networking Service */,
 				E88F8DB32663A4310088D9FB /* Resources */,
 				E88F8DB42663A49E0088D9FB /* App Delegate */,
 				E88F8DB52663A5910088D9FB /* Model */,
@@ -142,8 +153,20 @@
 			isa = PBXGroup;
 			children = (
 				E88F8DC12663A8530088D9FB /* UIView+Extension.swift */,
+				E88F8DD12663B5180088D9FB /* URL+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E88F8DC82663B4860088D9FB /* Networking Service */ = {
+			isa = PBXGroup;
+			children = (
+				E88F8DC92663B4950088D9FB /* RepositoriesProvider.swift */,
+				E88F8DCB2663B4AB0088D9FB /* APIService.swift */,
+				E88F8DCD2663B4D10088D9FB /* Endpoint.swift */,
+				E88F8DCF2663B4F90088D9FB /* APIRequest.swift */,
+			);
+			path = "Networking Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,12 +240,17 @@
 			files = (
 				E88F8DA42663A3BC0088D9FB /* RepositoriesListViewController.swift in Sources */,
 				E88F8DC52663AF600088D9FB /* RepositoryModel.swift in Sources */,
+				E88F8DD02663B4F90088D9FB /* APIRequest.swift in Sources */,
+				E88F8DCA2663B4950088D9FB /* RepositoriesProvider.swift in Sources */,
 				E88F8DC22663A8530088D9FB /* UIView+Extension.swift in Sources */,
+				E88F8DD22663B5180088D9FB /* URL+Extension.swift in Sources */,
+				E88F8DCC2663B4AB0088D9FB /* APIService.swift in Sources */,
 				E88F8DBA2663A6190088D9FB /* BaseViewController.swift in Sources */,
 				E88F8DC72663B0550088D9FB /* RepositoriesViewModel.swift in Sources */,
 				E88F8DBD2663A63D0088D9FB /* BaseView.swift in Sources */,
 				E88F8DA02663A3BC0088D9FB /* AppDelegate.swift in Sources */,
 				E88F8DBF2663A7AE0088D9FB /* RepositoriesListView.swift in Sources */,
+				E88F8DCE2663B4D10088D9FB /* Endpoint.swift in Sources */,
 				E88F8DA22663A3BC0088D9FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
