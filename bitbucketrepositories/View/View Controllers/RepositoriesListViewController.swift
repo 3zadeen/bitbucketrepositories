@@ -26,6 +26,7 @@ class RepositoriesListViewController: BaseViewController<RepositoriesListView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        customView.delegate = self
         configureTableView()
         configureDatasource()
         fetchData()
@@ -74,4 +75,16 @@ extension RepositoriesListViewController: UITableViewDelegate {
     }
 }
 
-
+extension RepositoriesListViewController: NextPage {
+    func nextPageButtonDidTap() {
+        if let nextPageURL = viewModel.nextPageURL {
+            viewModel.getNextPage(from: nextPageURL) { error in
+                if let error = error {
+                    print(error)
+                } else {
+                    self.createSnapshot()
+                }
+            }
+        }
+    }
+}
