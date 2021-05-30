@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        let viewModel = RepositoriesViewModel()
+        let viewModel = RepositoriesViewModel(with: RepositoriesProvider(with: APIService()))
         window?.rootViewController = UINavigationController(rootViewController: RepositoriesListViewController(with: viewModel))
     }
 

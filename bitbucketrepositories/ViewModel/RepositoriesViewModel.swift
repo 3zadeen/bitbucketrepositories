@@ -8,8 +8,10 @@
 import Foundation
 
 class RepositoriesViewModel {
+
+    let provider: RepositoriesProvider
     
-    init() {
-        
+    init(with provider: RepositoriesProvider) {
+        self.provider = provider
     }
 }
