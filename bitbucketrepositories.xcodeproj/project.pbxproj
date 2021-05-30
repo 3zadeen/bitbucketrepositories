@@ -23,6 +23,7 @@
 		E88F8DCE2663B4D10088D9FB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DCD2663B4D10088D9FB /* Endpoint.swift */; };
 		E88F8DD02663B4F90088D9FB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DCF2663B4F90088D9FB /* APIRequest.swift */; };
 		E88F8DD22663B5180088D9FB /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD12663B5180088D9FB /* URL+Extension.swift */; };
+		E88F8DD62663BE670088D9FB /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E88F8DCD2663B4D10088D9FB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		E88F8DCF2663B4F90088D9FB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		E88F8DD12663B5180088D9FB /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				E88F8DC12663A8530088D9FB /* UIView+Extension.swift */,
 				E88F8DD12663B5180088D9FB /* URL+Extension.swift */,
+				E88F8DD52663BE670088D9FB /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88F8DA42663A3BC0088D9FB /* RepositoriesListViewController.swift in Sources */,
+				E88F8DD62663BE670088D9FB /* UITableViewCell+Extension.swift in Sources */,
 				E88F8DC52663AF600088D9FB /* RepositoryModel.swift in Sources */,
 				E88F8DD02663B4F90088D9FB /* APIRequest.swift in Sources */,
 				E88F8DCA2663B4950088D9FB /* RepositoriesProvider.swift in Sources */,
